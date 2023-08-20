@@ -4,6 +4,9 @@ const firstBtn = document.getElementById('firstBtn')
 const secondBtn = document.getElementById('secondBtn')
 
 firstBtn.addEventListener('click', function(){
+  secondBtn.classList.remove('aberto')
+  secondBtn.classList.add('btn')
+  contentSecond.style.display = 'none'
   firstBtn.classList.toggle('aberto') //troca os temas dos botões
   if(contentFirst.style.display === 'block'){  //se estiver com display block
     contentFirst.style.display = 'none'        //trocará para o none
@@ -25,6 +28,9 @@ firstBtn.addEventListener('click', function(){
 })
 
 secondBtn.addEventListener('click', function(){
+  firstBtn.classList.remove('aberto')
+  firstBtn.classList.add('btn')
+  contentFirst.style.display = 'none'
   secondBtn.classList.toggle('aberto')
   if(contentSecond.style.display === 'block'){
      contentSecond.style.display = 'none'
@@ -44,3 +50,4 @@ secondBtn.addEventListener('click', function(){
 
   }
 })
+

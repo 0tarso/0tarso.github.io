@@ -5,8 +5,10 @@
 }
 
 .container{
+  
   display: flex;
   flex-direction: column;
+  gap: 0px;
 }
 
 .box1{
@@ -14,6 +16,7 @@
   background:url(dream_TradingCard\ \(8\).jpg);
   background-repeat: no-repeat;
   background-size: 450px;
+  background-position: 35%;
   background-position-y: -8px ;
   display: flex;
   flex-direction: column;
@@ -57,7 +60,7 @@
 
 .btn{
   border: 3px transparent solid;
-  border-left: 3px solid black;
+  border-left: 3px solid rgb(255, 255, 255);
   background-color: transparent;
   font-size: 15px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -99,26 +102,33 @@
   padding: 5px;
   font-size: 20px;
   margin-top: 20%;
+  border-left: 3px solid black;
+}
+
+#primeiraPgn:hover{
+  border-left: 3px solid transparent;
 }
 
 
+
 .box2{
-  background-color: antiquewhite;
+  background-image: url(/Projeto1/the-waxing-gibbous-moon-above-earths-horizon-ID52255-667x1001.jpg);
+  background-position-x:-170px;  
+  background-size: 160%;
   filter: ;
   display: flex;
   justify-content: center;
   height: 100vh;
   flex-direction: column;
-  padding: 8px 8px 8px 8px;
+  /* padding: 8px 8px 8px 8px; */
   /* padding-top: 15px; */
   gap: 10px;
   align-items: center ;
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
   
 }
-
-
 .year{
+  color: white;
   text-align: center;
   padding: 5px;
 }
@@ -126,7 +136,7 @@ a .name{
   display: inline-block;
   text-decoration: none;
   border: 3px solid transparent;
-  border-left: 3px solid black;
+  border-left: 3px solid rgb(255, 255, 255);
   transition: 0.3s;
 }
 a .name:link{
@@ -136,26 +146,23 @@ a:visited{
   color: inherit;
 }
 a .name:hover{
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.359);
-  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgba(245, 242, 242, 0.359);
+  color: rgb(255, 255, 255);
   border-bottom: 3px solid #f5b133;
   border-left: 3px solid transparent;
 }
 .name{
-  
+  color: white;
   padding-left: 3px;
-  /* margin-right: 15px; */
   font-size: 16px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   width: fit-content;
-  
   list-style: none;
-  /* background-color: #f5b133; */
-  
 }
 
 
 .description{
+  color: white;
   padding-bottom: 5px;
   padding-left: 15px;
   list-style: none;
@@ -191,6 +198,10 @@ a .name:hover{
   .box1{
     /* background-size: 130%; */
   }
+  .box2{
+    background-size: 140%;
+    background-position-x: -150px;
+  }
 }
 
 @media screen and (min-width: 425px) {
@@ -206,5 +217,9 @@ a .name:hover{
   .box1{
     background-size: 130%;
     background-position-y:-40px ;
+  }
+  .box2{
+    background-size: 120%;
+    background-position-x: -80px;
   }
 }
