@@ -13,7 +13,7 @@
 
 .box1{
 
-  background:url(dream_TradingCard\ \(8\).jpg);
+  background:url(/img/dream_TradingCard\ \(8\).jpg);
   background-repeat: no-repeat;
   background-size: 550px;
   background-position: 0%;
@@ -112,7 +112,7 @@
 
 
 .box2{
-  background-image: url(/the-waxing-gibbous-moon-above-earths-horizon-ID52255-667x1001.jpg);
+  background-image: url(img/the-waxing-gibbous-moon-above-earths-horizon-ID52255-667x1001.jpg);
   background-position-x:-170px;  
   background-size: 160%;
   display: flex;
