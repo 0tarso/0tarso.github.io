@@ -163,3 +163,51 @@ body{
   color: hsl(228, 45%, 44%); 
 }
 
+@media (max-width: 645px){
+  body{
+    justify-content: flex-start;
+    
+  }
+
+  .container{
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .circle{
+    width: 150px;
+    height: 150px;
+  }
+  .boxResult{
+    gap: 10px;
+    width: 100vw;
+    height: 50vh;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 0;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+  }
+  .boxNumbers{
+    width: 100vw;
+    
+    padding: 10px 50px;
+  }
+  .sumary{
+    padding-bottom: 5px;
+  }
+  #text{
+    width: 220px;
+  }
+  .button{
+  
+  }
+
+
+  .attribution{
+    position: absolute;
+    bottom: 5px;
+
+  }
+}
+
