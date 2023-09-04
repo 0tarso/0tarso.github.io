@@ -13,7 +13,6 @@ body{
   justify-content: center;
   align-items: center;
 }
-
 .container{
   display: flex;
   width: 80vw;
@@ -22,6 +21,8 @@ body{
   border-radius: 10px;
   box-shadow: 10px 15px 20px rgba(53, 53, 53, 0.044);
 }
+
+
 
 .boxResult{
   width: 50vw;
@@ -38,15 +39,8 @@ body{
 .boxResult>p{
   color: hsl(221, 100%, 96%);
 }
-
 .boxResult>h2{
   color: white;
-}
-
-#text{
-  color: hsla(222, 100%, 96%, 0.63);
-  width: 200px;
-  font-size: 14px;
 }
 .circle{
   width: 180px;
@@ -66,23 +60,27 @@ body{
   font-size: 15px;
   color: hsl(0, 0%, 73%);
 }
+#text{
+  color: hsla(222, 100%, 96%, 0.63);
+  width: 200px;
+  font-size: 14px;
+}
+
+
 
 .boxNumbers{
   display: flex;
   flex-direction:column;
   width: 50vw;
-  
   gap: 10px;
   padding: 40px 40px 0px 40px;
 }
-
 .sumary{
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 1px;
   padding-bottom: 20px;
 }
-
 .inputs{
   border: 3px  transparent;
   border-radius: 8px;
@@ -98,7 +96,6 @@ body{
 }
 .reaction {
   color: hsl(0, 100%, 67%);
-
 }
 
 #memory{
@@ -110,16 +107,13 @@ body{
 
 #verbal{
   background-color:hsla(166, 100%, 37%, 0.081) ;
-
 }
 .verbal{
   color: hsl(166, 100%, 37%);
-
 }
 
 #visual{
   background-color: hsla(234, 85%, 45%, 0.081);
-
 }
 .visual{
   color: hsl(234, 85%, 45%);
@@ -128,13 +122,14 @@ body{
 .resultName{
   display: flex;
   flex-direction: row;
-  gap: 5px;
-  
+  gap: 5px; 
 }
-
-
+.resultNumber{
+  color: hsl(0, 0%, 73%);
+}
 .selectNumber{
   font-weight: 800;
+  color: black;
 }
 
 .button{
@@ -154,6 +149,8 @@ body{
   background: linear-gradient(to bottom ,hsla(234, 85%, 45%, 0.596),hsl(234, 64%, 53%));
   letter-spacing: 1px;
 }
+
+
 
 .attribution { 
   font-size: 11px; 
