@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+body h1{
+  color: hsl(234, 29%, 20%);
+}
+.container.thanks{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ /* align-items: flex-start; */
+ gap: 20px;
+ width: 100vw;
+ height: 100vh;
+ border: 3px solid red;
+ padding: 20px;
+ text-align: left;
+}
+.container.thanks >img{
+  width: 80px;
+}
+
+.container.thanks h1{
+  font-size: 40px;
+}
+
+.container.thanks p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.container{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  width: 100vw;
+  height: 100vh;
+  /* border: 3px solid red; */
+
+}
+
+.lateralImg{
+  background-image: url(/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 3px solid black; */
+  height: 40vh;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.registerBox{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 20px;
+}
+
+.updates{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.registerEmail{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+.registerEmail > label{
+  color:hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 12px;
+  
+}
+
+.registerEmail>input{
+  height: 50px;
+  padding-left: 15px;
+  border: 2px solid rgb(187, 187, 187);
+  border-radius: 5px;
+}
+.registerEmail>input:focus{
+  background-color: white;
+}
+
+.error{
+  background-color: #ff62575d;
+  border: 2px solid rgb(194, 13, 0);
+}
+.error:focus{
+  background-color: #ff62575d;
+  border: 2px solid rgb(194, 13, 0);
+}
+.button#dismissBtn{
+  width: 300px;
+  margin-top: 150px;
+}
+.button{
+  background-color: hsl(234, 29%, 20%);
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: active 0.5s;
+}
+.button > p {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.button:hover{
+  background-image:radial-gradient(circle, hsla(4, 100%, 67%, 0.904), hsla(4, 100%, 67%, 0.76));
+}
+.button:active{
+  background-image:radial-gradient(circle, hsl(4, 100%, 67%), hsl(4, 100%, 67%));
+  box-shadow: 5px 10px 20px rgba(255, 98, 98, 0.49);
+}
+
