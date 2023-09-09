@@ -1,6 +1,6 @@
 const email = document.getElementById('email')
 const label = document.getElementById('labelEmail')
-const form = document.getElementById('form')
+const subBtn = document.getElementById('subBtn')
 
 function validate(e){
   e.preventDefault()
@@ -19,4 +19,4 @@ function validate(e){
 
 }
 
-form.addEventListener('submit',validate)
+subBtn.addEventListener('click',validate)
