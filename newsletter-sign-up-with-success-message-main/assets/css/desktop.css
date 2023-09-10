@@ -112,13 +112,10 @@ body{
   border-radius: 10px;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: active 0.5s;
-}
-.button > p {
   color: white;
   font-weight: 700;
+  transition: active 0.5s;
 }
-
 .button:hover{
   background-image:radial-gradient(circle, hsla(4, 100%, 67%, 0.904), hsla(4, 100%, 67%, 0.76));
 }
