@@ -161,7 +161,7 @@ ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 15px;
+  row-gap: 25px;
 }
 
 .texts p {
