@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mobile.css" media=" screen and (max-width: 690px)">
+  <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 690px)">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } -->
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+      <img src="./images/logo.svg" alt="">
+      <img class="menuIcon" id="menuIcon" src="./images/icon-menu.svg" alt="">
+      <ul class="menu" id="menu">
+            <img class= 'closeMenuIcon' id="closeMenuIcon" src="./images/icon-close-menu.svg" alt="">
+            <li class="dropdown">
+                <a href="" id="featuresDrop">Features</a>
+                  <div class="menuSeta" id="menuSetaF"> </div>
+                    <div class="dropdownMenu" id="dropFeatures">
+                        <a href=""><img class="subMenuIcon" src="./images/icon-todo.svg" alt="">Todo List</a>
+                        <a  href=""><img class="subMenuIcon" src="./images/icon-calendar.svg" alt="">Calendar</a>
+                        <a href=""><img class="subMenuIcon" src="./images/icon-reminders.svg" alt="">Reminders</a>
+                        <a href=""><img  class="subMenuIcon" src="./images/icon-planning.svg" alt="">Planning</a>
+                </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="" id="companyDrop">Company</a>
+            <div class="menuSeta" id="menuSetaC"> </div>
+              <div class="dropdownMenu" id="dropCompany">
+                <a href="">History</a>
+                
+                <a href="">Our Team</a>
+                
+                <a href="">Blog</a>
+              </div>
+          </li>
+
+          <li>Carrers</li>
+          <li>About</li>
+          <div class="registerMobile">
+            <button class="registerBtn">Login</button>
+            <button class="registerBtn">Register</button>
+          </div>
+      </ul>
+    </div>
+
+    <div class="register">
+      <button class="registerBtn">Login</button>
+      <button class="registerBtn">Register</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="boxTexts">
+        <div class="texts">
+          <h1>Make <br>remote work</h1>
+          <p>Get your team in sync, no matter your location.  <br> Streamline processes, create team rituals, and watch productivity soar.</p>
+          <button class="learnBtn">Learn more</button>
+        </div>  
+        <div class="sponsors">
+          <img src="./images/client-audiophile.svg" alt="">
+          <img src="./images/client-databiz.svg" alt="">
+          <img src="./images/client-maker.svg" alt="">
+          <img src="./images/client-meet.svg" alt="">
+        </div>
+      </div>
+
+      <div class="contentImg">
+      </div>
+
+      
+    </div>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/0tarso/0tarso.github.io" target="_blank">Tailison Ramos</a>
+    </div> -->
+  </main>
+  
+</body>
+</html>

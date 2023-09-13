@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+.header {
+  padding: 10px;
+  padding-bottom: 25px;
+  background-color: rgb(251, 251, 251);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 99vw;
+  padding-right: 10px;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+}
+
+.menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 70vw;
+  height: 100vh;
+  padding: 20px;
+  background-color: rgb(241, 241, 241);
+  right: 0;
+  top: 0;
+  box-shadow: -20px 0px 100px black;
+  transition: all 1s ease;
+}
+
+ul {
+  font-weight: 600;
+  list-style: none;
+  color: rgb(85, 85, 85);
+}
+
+ul li {
+  padding-top: 25px;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(85, 85, 85);
+
+}
+
+.menuIcon {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.closeMenuIcon {
+  width: 25px;
+  margin-left: 53vw;
+  cursor: pointer;
+}
+
+.menuSeta {
+  position: absolute;
+  left: 75px;
+  top: 30px;
+  width: 10px;
+  height: 5px;
+  background-image: url(./images/icon-arrow-up.svg);
+}
+
+.menuSetaAberta {
+  position: absolute;
+  left: 75px;
+  top: 30px;
+  width: 10px;
+  height: 5px;
+  background-image: url(./images/icon-arrow-down.svg);
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdownMenu {
+  display: none;
+}
+
+.dropdownMenuVisible {
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.subMenuIcon {
+  width: 30px;
+  padding-top: 2px;
+  padding-right: 15px;
+}
+
+.register {
+  display: none;
+}
+
+
+.registerMobile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.registerBtn {
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.registerBtn:hover {
+  background-color: rgba(169, 169, 169, 0.07);
+  border: 2px solid black;
+}
+
+
+.container {
+  height: 92vh;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.contentImg {
+  height: 80Vw;
+  background-image: url(./images/image-hero-mobile.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boxTexts {
+  height: 85vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.texts {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.texts p {
+  color: darkgray;
+  font-weight: 600;
+}
+
+
+
+
+.learnBtn {
+  padding: 10px;
+  color: white;
+  width: 150px;
+  background-color: black;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.learnBtn:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.sponsors {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  padding: 40px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sponsors img {
+  width: 70px;
+}
+
+.attribution {
+  text-align: center;
+  border: 3px solid red;
+  font-size: 12px;
+  height: 50px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 450px) and (max-width:690px) {
+  .menu {
+    width: 50vw;
+  }
+
+  .closeMenuIcon {
+    margin-left: 35vw;
+  }
+
+  ul {
+    font-size: 18px;
+  }
+
+  .registerMobile {
+    padding-top: 50px;
+  }
+
+  .registerBtn {
+    font-size: 18px;
+  }
+
+  .menuSeta {
+    left: 90px;
+  }
+
+  .menuSetaAberta {
+    left: 90px;
+  }
+}
