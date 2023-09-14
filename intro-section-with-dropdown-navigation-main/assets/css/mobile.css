@@ -5,6 +5,10 @@
   font-family: 'Epilogue', sans-serif;
 }
 
+body {
+  background-color: rgb(240, 240, 240);
+}
+
 .header {
   padding: 10px;
   padding-bottom: 25px;
