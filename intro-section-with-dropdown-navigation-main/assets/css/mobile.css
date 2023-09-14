@@ -70,7 +70,7 @@ ul li a {
   top: 30px;
   width: 10px;
   height: 5px;
-  background-image: url(./images/icon-arrow-up.svg);
+  background-image: url(/intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
 }
 
 .menuSetaAberta {
@@ -79,7 +79,7 @@ ul li a {
   top: 30px;
   width: 10px;
   height: 5px;
-  background-image: url(./images/icon-arrow-down.svg);
+  background-image: url(/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg);
 }
 
 .dropdown {
@@ -144,7 +144,7 @@ ul li a {
 
 .contentImg {
   height: 80Vw;
-  background-image: url(./images/image-hero-mobile.png);
+  background-image: url(/intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -66,7 +66,7 @@ body {
 }
 
 .dropdown:hover .menuSeta {
-  background-image: url(./images/icon-arrow-down.svg);
+  background-image: url(/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg);
 
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .menuSeta {
-  background-image: url(./images/icon-arrow-up.svg);
+  background-image: url(/intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
   width: 10px;
   height: 5px;
 }
@@ -174,10 +174,11 @@ body {
 .contentImg {
   width: 500px;
   height: 85vh;
-  background-image: url(./images/image-hero-desktop.png);
+  background-image: url(/intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 2px solid;
 }
 
 .learnBtn {
