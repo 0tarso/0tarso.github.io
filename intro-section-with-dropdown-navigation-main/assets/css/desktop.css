@@ -63,7 +63,6 @@ body {
 
 .dropdown:hover .dropdownMenu {
   display: flex;
-  opacity: 1;
 }
 
 .dropdown:hover .menuSeta {
