@@ -135,9 +135,7 @@ body {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
-  /* padding-top: 30px; */
   justify-content: space-between;
-  /* border: 2px solid black; */
 }
 
 .boxTexts {
@@ -150,7 +148,6 @@ body {
   width: 40vw;
   height: 85vh;
   padding-top: 20px;
-  /* border: 2px solid black; */
 }
 
 .boxTexts h1 {
@@ -196,8 +193,6 @@ body {
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  /* padding-top: 50px; */
-  /* border: 2px solid red; */
   width: 40vw;
 }
 
