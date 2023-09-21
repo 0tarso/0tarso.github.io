@@ -67,7 +67,6 @@ body {
 
 .iconRatingSelected {
   background-color: hsl(25, 97%, 53%);
-  color: white;
 }
 
 .rating {
@@ -83,8 +82,13 @@ body {
 }
 
 .rating input {
-  color: hsl(216, 12%, 54%);
+  color: hsl(217, 15%, 62%);
 
+}
+
+.rating input:focus {
+  color: white;
+  font-weight: 700;
 }
 
 .rating .submitBtn {
