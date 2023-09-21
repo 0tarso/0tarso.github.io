@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./assets/script.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <div class="boxContent" id="ratingPage">
+    <div class="iconStar">
+      
+    </div>
+
+    <h1>How did we do?</h1>
+
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <form action="" class="rating">
+      
+      <div class="inputsRating">
+
+        <input type="hidden" name="selectedRating" id="selectedRating" value="">
+        <input type="button" class="iconRating" name="rating" value="1" id="value1">
+        <input type="button" class="iconRating" name="rating" value="2" id="value2">
+        <input type="button" class="iconRating" name="rating" value="3" id="value3">
+        <input type="button" class="iconRating" name="rating" value="4" id="value4">
+        <input type="button" class="iconRating" name="rating" value="5" id="value5">
+      
+      </div>  
+      
+      <button class="submitBtn" type="submit" id="subBtn">SUBMIT</button>
+    
+    </form>
+  </div>
+
+  <div class="boxContentThanks" id="thanksPage">
+    <div class="thanksImg">
+
+    </div>
+
+    <div class="ratingResult">
+      You select <span id="ratingResultText">--</span> out of 5
+    </div>
+
+    <h2>Thank you!</h2>
+
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, dont hesitate to get in touch!</p>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/0tarso/0tarso.github.io" target="_blank">Tailison Ramos</a>.
+  </div>
+</body>
+</html>
