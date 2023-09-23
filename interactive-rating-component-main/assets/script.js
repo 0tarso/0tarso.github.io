@@ -8,9 +8,9 @@ const subBtn = document.getElementById('subBtn')
 
 let selectedValue = ''
 
-ratingOption.forEach(function(btn){
-  btn.addEventListener('click',function(){
-    ratingOption.forEach(function(buttons){
+ratingOption.forEach( btn => {
+  btn.addEventListener('click', () => {
+    ratingOption.forEach( buttons => {
       buttons.classList.remove('iconRatingSelected')
     })
 
@@ -25,7 +25,7 @@ ratingOption.forEach(function(btn){
   })
 })
 
-form.addEventListener('submit',function(ev){
+form.addEventListener('submit', ev => {
   if(selectedValue === ''){
     ev.preventDefault()
     subBtn.innerText = 'SELECT AN OPTION'
