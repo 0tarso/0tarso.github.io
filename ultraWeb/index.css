@@ -1,0 +1,299 @@
+@font-face {
+  font-family: AllerBoldIt;
+  src: url(./fonts/Aller-Bold-Italic/Aller_Std_BdIt.ttf);
+}
+
+@font-face {
+  font-family: AllerStdBold;
+  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
+}
+
+@font-face {
+  font-family: AllerStd;
+  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Lt.ttf);
+}
+
+@font-face {
+  font-family: AllerDisplay;
+  src: url(./fonts/Aller-Bold-Italic/AllerDisplay_Std_Rg.ttf);
+}
+
+* {
+  font-family: AllerBoldIt;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  font-size: 12px;
+}
+
+body {
+  background-image: url(./img/gramaFundo.jpg);
+  background-size: 100%;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+
+}
+
+.header {
+  width: 65vw;
+  height: 140px;
+  background-color: #0056BA;
+  border-radius: 0px 0px 80px 80px;
+  box-shadow: 6px 6px 15px 10px rgba(0, 0, 0, 0.422);
+  text-align: center;
+  font-weight: 600;
+  padding-top: 10px;
+  margin-bottom: 90px;
+}
+
+.firstText,
+.secondText,
+.thirdText {
+  color: white;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.firstText {
+  font-size: 1.3em;
+}
+
+.secondText {
+  font-size: 2em;
+}
+
+.thirdText {
+  font-size: 3em;
+}
+
+.logoUltra {
+  position: absolute;
+  left: 51%;
+  transform: translate(-50%, 10%);
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.418));
+}
+
+.options {
+  /* border: 3px solid black; */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.options a {
+  text-decoration: none;
+  text-underline-position: 0;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 2px;
+  border: none;
+
+}
+
+a:visited {
+  text-decoration: none;
+  background-color: none;
+}
+
+a:active {
+  text-decoration: none;
+  background-color: #006ae3;
+}
+
+.options .firstOptionImg {
+  position: absolute;
+  width: 65%;
+  top: -50px;
+}
+
+.firstOption {
+  z-index: 10;
+  width: 347px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  border-radius: 0px 10px 5px 0px;
+  background-color: #0056BA;
+  filter: drop-shadow(5px 5px 15px black);
+}
+
+
+.secondOptionImg {
+  position: absolute;
+  width: 65%;
+  top: 95px;
+}
+
+.secondOption {
+  z-index: 10;
+  width: 305px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  border-radius: 0px 10px 5px 0px;
+  background-color: #0056BA;
+  filter: drop-shadow(5px 5px 15px black);
+}
+
+.carrousel {
+  padding: 15px;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  /* background-color: #0056BA; */
+}
+
+.carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 288px;
+  height: 170px;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0px 1.5px 5px 5px rgba(0, 0, 0, 0.468);
+}
+
+.cardUltra {
+  background: url(./img/backgroundUltra.svg);
+  background-size: cover;
+}
+
+.cardVivente {
+  background: url(./img/backgroundVivente.svg);
+  background-size: cover;
+}
+
+.cardContent {
+  display: flex;
+  /* border: 3px solid red; */
+  height: 100vh;
+  column-gap: 10px;
+}
+
+.cardImg {
+  /* border: 2px solid black; */
+  display: flex;
+
+
+}
+
+.cardImg img {
+  display: flex;
+  align-items: center;
+  min-height: 103px;
+  width: 84px;
+  filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, 0.49));
+}
+
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid blue; */
+}
+
+.cardText img {
+  padding-left: 7px;
+  align-self: flex-start;
+  transform: scale(120%);
+
+}
+
+.cardText .viventeImg {
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.444));
+}
+
+.cardImg .viventeProd {
+  transform: scale(120%);
+}
+
+.cardText p {
+  padding-top: 5px;
+  /* font-size: 11px; */
+  font-weight: 600;
+  font-family: AllerStd;
+}
+
+.cardText .cardTextUltra {
+  padding-top: 20px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.cardText .cardTextVivente {
+  color: #626262;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+  padding-top: 15px;
+
+}
+
+.button {
+  background-color: transparent;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-90%);
+  width: 92px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.button a {
+  font-family: AllerStdBold;
+  text-decoration: none;
+}
+
+.button a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.btnUltra {
+  background: linear-gradient(180deg, #FFF 0%, #80b3ff 99.47%);
+}
+
+.btnVivente {
+  background: linear-gradient(180deg, #FFF 0%, #FFF7CF 99.47%);
+}
+
+
+footer.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  /* height: 100vh; */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.51) 97.4%);
+  display: flex;
+  justify-content: space-around;
+}
+
+footer img {
+  filter: drop-shadow(1px 1px 10px black);
+}

@@ -1,0 +1,182 @@
+@font-face {
+  font-family: AllerBoldIt;
+  src: url(./fonts/Aller-Bold-Italic/Aller_Std_BdIt.ttf);
+}
+
+@font-face {
+  font-family: AllerStdBold;
+  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
+}
+
+@font-face {
+  font-family: AllerStd;
+  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Lt.ttf);
+}
+
+@font-face {
+  font-family: AllerDisplay;
+  src: url(./fonts/Aller-Bold-Italic/AllerDisplay_Std_Rg.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 14px;
+  font-family: AllerStd;
+  font-weight: 400;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.productName,
+.subname,
+.subtitle {
+  font-family: AllerDisplay;
+}
+
+header {
+  position: relative;
+  /* display: flex; */
+  width: 100vw;
+  height: 200px;
+  background: url(./img/selenioProductBgPg.png);
+  background-size: cover;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+}
+
+header img {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%) scale(110%);
+  filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.207));
+}
+
+.title {
+  text-align: center;
+  height: 75px;
+  width: 100vw;
+  /* background-color: aqua; */
+  margin-top: 65px;
+  position: relative;
+}
+
+.title .productName {
+  font-size: 3.5rem;
+}
+
+.productName::after {
+  content: '';
+  /* display: block; */
+  background-color: black;
+  width: 22vw;
+  height: 2px;
+  bottom: 50%;
+  right: 5px;
+  position: absolute;
+}
+
+.productName::before {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  display: block;
+  background-color: black;
+  width: 22vw;
+  left: 5px;
+  height: 2px;
+}
+
+.title .subname {
+  font-size: 1.5rem;
+  line-height: 1px;
+}
+
+.productReview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: rgb(178, 132, 220); */
+  width: 100vw;
+  height: 15vh;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.productReview p {
+  width: 85vw;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  position: relative;
+  font-size: 1.6rem;
+  /* background-color: yellow; */
+  text-align: center;
+
+}
+
+.subtitle::before {
+  content: '';
+  position: absolute;
+  bottom: 40%;
+  display: block;
+  background-color: black;
+  width: 25vw;
+  left: 5vw;
+  height: 2px;
+}
+
+.subtitle::after {
+  content: '';
+  /* display: block; */
+  background-color: black;
+  width: 25vw;
+  height: 2px;
+  bottom: 40%;
+  right: 5vw;
+  position: absolute;
+}
+
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  /* background-color: rgb(255, 118, 118); */
+
+
+}
+
+.cardDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.cardDescription p {
+  /* background-color: white; */
+  width: 70vw;
+}
+
+.firstWordCard {
+  font-weight: 400;
+  font-family: AllerDisplay;
+}

@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: AllerStdBold;
+  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: AllerStdBold;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  font-size: 12px;
+}
+
+.box {
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(244, 244, 244, 0.877);
+}
+
+.box::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 81px;
+  border-radius: 0px 0px 20px 20px;
+  background: linear-gradient(180deg, #0056BA 0%, #7FBAFF 82.42%);
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.475));
+}
+
+.header p {
+  font-size: 2.2rem;
+  color: white;
+  text-shadow: 2px 0.8px 5px #393939;
+  padding-top: 20px;
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.273));
+
+}
+
+
+
+.boxCard {
+  padding: 10px 0px;
+  display: grid;
+  /* border: 2px solid black; */
+  grid-template-areas: 'img texto';
+  grid-template-columns: 1fr 2fr;
+
+}
+
+.boxCardImg {
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid black; */
+  width: 150px;
+}
+
+.boxcardText {
+  grid-area: texto;
+  /* border: 2px solid red; */
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.boxcardText p {
+  color: rgba(68, 68, 68, 1);
+}
+
+.productTitle {
+  font-size: 22px;
+}
+
+.productSpec {
+  font-size: 12px;
+}
+
+.productCost p {
+  font-size: 12px;
+}
+
+.moeda {
+  font-size: 18px;
+}
+
+.productCost .cost {
+  font-size: 52px;
+}
+
+
+
+
+.divisor {
+  display: flex;
+  justify-content: center;
+}
+
+.divisor img {
+  transform: scale(110%);
+}
+
+footer.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 35px;
+  background: linear-gradient(to bottom, rgba(232, 236, 230, 0.095) 0%, #f1f1f1dc 54.06%);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.071));
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 5px;
+}
+
+footer img {
+  padding-left: 10px;
+}
+
+footer a {
+
+  font-family: AllerStd;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+
+footer a:visited {
+  color: black;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+footer a:active {
+  border-radius: 20px;
+  background-color: white;
+}
