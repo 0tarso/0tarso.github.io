@@ -32,6 +32,7 @@
 html {
   -webkit-tap-highlight-color: transparent;
   font-size: 12px;
+  transition: all 2s ease-in;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
   flex-direction: column;
   align-items: center;
   row-gap: 25px;
-
+  overflow-y: scroll;
 }
 
 .header {
@@ -57,6 +58,9 @@ body {
   font-weight: 600;
   padding-top: 10px;
   margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .firstText,
@@ -79,9 +83,10 @@ body {
 }
 
 .logoUltra {
-  position: absolute;
-  left: 51%;
-  transform: translate(-50%, 10%);
+  width: 100px;
+  /* position: absolute;
+  left: 51%; */
+  /* transform: translate(-50%, 10%); */
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.418));
 }
 

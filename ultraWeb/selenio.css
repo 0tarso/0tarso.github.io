@@ -61,7 +61,7 @@ header img {
   position: absolute;
   right: 50%;
   left: 50%;
-  transform: translate(-50%, 30%) scale(110%);
+  transform: translate(-50%, 30%) scale(100%);
   filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.207));
 }
 
