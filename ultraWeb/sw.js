@@ -14,16 +14,32 @@ const urlsToCache = [
 
 self.addEventListener('install', function(event){
     event.waitUntil(
-        caches.open('v5')
+        caches.open('v6')
         .then(cache => cache.addAll(urlsToCache))
     )
     .then( () => self.skipWaiting() )
 })
 
 
-self.addEventListener('activate', event => {
-    event.waitUntil(self.clients.claim())
-})
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+      caches.keys().then(function(cacheNames) {
+        return Promise.all(
+          cacheNames.map(function(cacheName) {
+              console.log(cacheName)
+                  // Verifica se o nome do cache mudou
+              if(cacheName !== CACHE_NAME){
+                  return caches.delete(cacheName);
+              }
+          })
+        );
+      })
+    );
+  });
+
+// self.addEventListener('activate', event => {
+//     event.waitUntil(self.clients.claim())
+// })
 
 
 self.addEventListener('fetch', event =>{
