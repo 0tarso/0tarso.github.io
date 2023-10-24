@@ -1,0 +1,27 @@
+{
+  "short_name": "UltraMed Popular",
+  "name": "UltraMed Popular",
+  "start_url": "https://0tarso.github.io/ultraWeb/index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background-color": "#000000",
+  "description": "description",
+  "lang": "pt-br",
+  "icons": [
+    {
+      "src": "assets/img/logoUltraTexto.svg",
+      "type": "image/svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/img/selenioProductPg.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/img/selenioProductPg.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

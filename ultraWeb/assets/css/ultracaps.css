@@ -1,21 +1,21 @@
 @font-face {
   font-family: AllerDisplay;
-  src: url(./fonts/Aller-Bold-Italic/AllerDisplay_Std_Rg.ttf);
+  src: url(../../fonts/Aller-Bold-Italic/AllerDisplay_Std_Rg.ttf);
 }
 
 @font-face {
   font-family: AllerStdBold;
-  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
+  src: url(../../fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
 }
 
 @font-face {
   font-family: AllerBoldIt;
-  src: url(./fonts/Aller-Bold-Italic/Aller_Std_BdIt.ttf);
+  src: url(../../fonts/Aller-Bold-Italic/Aller_Std_BdIt.ttf);
 }
 
 @font-face {
   font-family: AllerStd;
-  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Lt.ttf);
+  src: url(../../fonts/Aller-Bold-Italic/Aller_Std_Lt.ttf);
 }
 
 
@@ -27,7 +27,7 @@
 }
 
 body {
-  background: url(./img/ultracapsPgBackground.jpg), lightgray 100% / cover no-repeat;
+  background: url(../img/ultracapsPgBackground.jpg), lightgray 100% / cover no-repeat;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -145,7 +145,7 @@ body {
   border-radius: 40px;
   background-color: white;
   text-align: center;
-  background: url(./img/ultraCapsProductBackground.svg);
+  background: url(../img/ultraCapsProductBackground.svg);
   background-position: center;
   background-size: cover;
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.558));

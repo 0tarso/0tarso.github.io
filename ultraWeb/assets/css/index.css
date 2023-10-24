@@ -1,21 +1,21 @@
 @font-face {
   font-family: AllerBoldIt;
-  src: url(./fonts/Aller-Bold-Italic/Aller_Std_BdIt.ttf);
+  src: url(../../fonts/Aller-Bold-Italic/Aller_Std_BdIt.ttf);
 }
 
 @font-face {
   font-family: AllerStdBold;
-  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
+  src: url(../../fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
 }
 
 @font-face {
   font-family: AllerStd;
-  src: url(./fonts/Aller-Bold-Italic/Aller_Std_Lt.ttf);
+  src: url(../../fonts/Aller-Bold-Italic/Aller_Std_Lt.ttf);
 }
 
 @font-face {
   font-family: AllerDisplay;
-  src: url(./fonts/Aller-Bold-Italic/AllerDisplay_Std_Rg.ttf);
+  src: url(../../fonts/Aller-Bold-Italic/AllerDisplay_Std_Rg.ttf);
 }
 
 * {
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  background-image: url(./img/gramaFundo.jpg);
+  background-image: url(../img/gramaFundo.jpg);
   background-size: 100%;
   background-position: center;
   width: 100vw;
@@ -184,12 +184,12 @@ a:active {
 }
 
 .cardUltra {
-  background: url(./img/backgroundUltra.svg);
+  background: url(../img/backgroundUltra.svg);
   background-size: cover;
 }
 
 .cardVivente {
-  background: url(./img/backgroundVivente.svg);
+  background: url(../img/backgroundVivente.svg);
   background-size: cover;
 }
 
