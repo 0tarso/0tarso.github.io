@@ -14,12 +14,10 @@ const urlsToCache = [
 
 self.addEventListener('install', function(event){
     event.waitUntil(
-        caches.open('v1')
-        .then(function(cache){
-            console.log('Opened cache');
-            return cache.addAll(urlsToCache)
-        })
+        caches.open('v5')
+        .then(cache => cache.addAll(urlsToCache))
     )
+    .then( () => self.skipWaiting() )
 })
 
 
