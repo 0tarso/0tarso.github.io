@@ -3,8 +3,8 @@
   "name": "UltraMed Popular",
   "start_url": "https://0tarso.github.io/ultraWeb/index.html",
   "display": "standalone",
-  "theme_color": "#0056BA",
-  "background-color": "#0056BA",
+  "theme_color": "#0056ba",
+  "background-color": "#0056ba",
   "description": "description",
   "lang": "pt-br",
   "icons": [
@@ -19,9 +19,9 @@
       "sizes": "192x192"
     },
     {
-      "src": "logoUltraTexto-512-359png.png",
+      "src": "logoUltraTexto-512-512png.png",
       "type": "image/png",
-      "sizes": "513x360"
+      "sizes": "512x512"
     }
   ]
 }
