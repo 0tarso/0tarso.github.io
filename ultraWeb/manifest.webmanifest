@@ -1,7 +1,7 @@
 {
-  "short_name": "UltraMed Poooo",
-  "name": "UltraMed Popuuuu",
-  "start_url": "https://0tarso.github.io/ultraWeb/index.html",
+  "short_name": "UltraMed Popular",
+  "name": "UltraMed Popular V1",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#0056ba",
   "backround-color": "#0056ba",
@@ -12,11 +12,6 @@
     {
       "src": "logoUltraHeart.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logoUltraHeart-192-192svg.svg",
-      "type": "image/svg",
       "sizes": "192x192"
     },
     {
