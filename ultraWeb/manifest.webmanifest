@@ -4,7 +4,7 @@
   "start_url": "https://0tarso.github.io/ultraWeb/index.html",
   "display": "standalone",
   "theme_color": "#0056ba",
-  "background-color": "#0056ba",
+  "background_color": "#0056ba",
   "description": "description",
   "lang": "pt-br",
   "icons": [
