@@ -14,14 +14,14 @@
       "sizes": "192x192"
     },
     {
-      "src": "logoUltraTexto.svg",
+      "src": "logoUltraHeart-192-192svg.svg",
       "type": "image/svg",
       "sizes": "192x192"
     },
     {
-      "src": "logoUltraTexto.png",
+      "src": "logoUltraTexto-512-359png.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x359"
     }
   ]
 }
