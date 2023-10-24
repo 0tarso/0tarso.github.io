@@ -12,3 +12,5 @@ async function registerSW(){
       }
   }
 }
+
+window.onload

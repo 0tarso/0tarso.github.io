@@ -32,7 +32,18 @@
 html {
   -webkit-tap-highlight-color: transparent;
   font-size: 12px;
-  transition: all 2s ease-in;
+  -webkit-animation: fadein 2s;
+
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 body {
@@ -47,6 +58,7 @@ body {
   row-gap: 25px;
   overflow-y: scroll;
 }
+
 
 .header {
   width: 65vw;
