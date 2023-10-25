@@ -9,6 +9,23 @@
   src: url(../../fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+  font-size: 12px;
+  -webkit-animation: fadein 2s;
+
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   width: 100vw;
   height: 100vh;

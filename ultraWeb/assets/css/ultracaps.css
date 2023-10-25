@@ -26,6 +26,23 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+  font-size: 12px;
+  -webkit-animation: fadein 2s;
+
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   background: url(../img/ultracapsPgBackground.jpg), lightgray 100% / cover no-repeat;
   display: flex;
