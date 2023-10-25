@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cacheTesteV1.0'
+const CACHE_NAME = 'cacheTesteV1.10'
 const urlsToCache = [
     './',
     './index.html',
@@ -21,21 +21,21 @@ self.addEventListener('install', function(event){
 })
 
 
-self.addEventListener('activate', function(event) {
-    event.waitUntil(
-      caches.keys().then(function(cacheNames) {
-        return Promise.all(
-          cacheNames.map(function(cacheName) {
-              console.log(cacheName)
-                  // Verifica se o nome do cache mudou
-              if(cacheName !== CACHE_NAME){
-                  return caches.delete(cacheName);
-              }
-          })
-        );
-      })
-    );
-  });
+// self.addEventListener('activate', function(event) {
+//     event.waitUntil(
+//       caches.keys().then(function(cacheNames) {
+//         return Promise.all(
+//           cacheNames.map(function(cacheName) {
+//               console.log(cacheName)
+//                   // Verifica se o nome do cache mudou
+//               if(cacheName !== CACHE_NAME){
+//                   return caches.delete(cacheName);
+//               }
+//           })
+//         );
+//       })
+//     );
+//   });
 
 // self.addEventListener('activate', event => {
 //     event.waitUntil(self.clients.claim())
@@ -67,9 +67,9 @@ self.addEventListener('activate', function(event) {
 //     return self.skipWaiting()
 // })
 
-// self.addEventListener('activate', e =>{
-//     self.clients.claim()
-// })
+self.addEventListener('activate', e =>{
+    self.clients.claim()
+})
 
 self.addEventListener('fetch', async e =>{
     const req = e.request
