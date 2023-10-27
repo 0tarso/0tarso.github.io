@@ -32,7 +32,7 @@ html {
 }
 
 
-@-webkit-keyframes fadein {
+@keyframes fadein {
   from {
     opacity: 0;
   }
