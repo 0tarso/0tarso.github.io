@@ -79,11 +79,11 @@ header {
 
 @keyframes abertura-header {
   from {
-    left: -255px;
+    transform: translateX(0%);
   }
 
   to {
-    left: 0;
+    transform: translateX(100%);
   }
 }
 
@@ -104,7 +104,6 @@ header {
   position: absolute;
   height: 95px;
   width: fit-content;
-  right: -300px;
   animation-name: abertura-banner;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -112,11 +111,11 @@ header {
 
 @keyframes abertura-banner {
   from {
-    right: -300px;
+    transform: translateX(130%);
   }
 
   to {
-    right: 110px;
+    transform: translateX(0%);
   }
 }
 

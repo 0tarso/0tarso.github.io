@@ -82,7 +82,6 @@ header {
   justify-content: center;
 
   position: absolute;
-  top: -180px;
 
   animation-name: queda-header;
   animation-duration: 3s;
@@ -92,11 +91,11 @@ header {
 
 @keyframes queda-header {
   from {
-    top: -180px;
+    transform: translateY(-130%);
   }
 
   to {
-    top: 0px;
+    transform: translateY(0%);
   }
 }
 
