@@ -75,7 +75,7 @@ header img {
   position: absolute;
   right: 50%;
   left: 50%;
-  transform: translate(-50%, 30%) scale(100%);
+  transform: translate(-50%, -5%) scale(60%);
   filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.207));
 }
 
@@ -186,8 +186,10 @@ header img {
 }
 
 .cardDescription p {
-  /* background-color: white; */
+  /* background-color: red; */
   width: 70vw;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .firstWordCard {

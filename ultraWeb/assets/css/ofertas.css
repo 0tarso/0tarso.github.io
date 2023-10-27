@@ -1,12 +1,13 @@
+@font-face {
+  font-family: AllerStdBold;
+  src: url(../../fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
+}
+
+
 * {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
-}
-
-@font-face {
-  font-family: AllerStdBold;
-  src: url(../../fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
 }
 
 html {
