@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cacheTesteV2.2'
+const CACHE_NAME = 'cacheTesteV3.0'
 const urlsToCache = [
     './',
     './index.html',

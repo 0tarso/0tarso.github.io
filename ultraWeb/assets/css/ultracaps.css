@@ -71,6 +71,8 @@ header {
   justify-content: center;
   align-items: center;
 
+  will-change: transform;
+
   animation-name: abertura-header;
   animation-fill-mode: forwards;
   animation-duration: 2s;
@@ -104,6 +106,9 @@ header {
   position: absolute;
   height: 95px;
   width: fit-content;
+
+  will-change: transform;
+
   animation-name: abertura-banner;
   animation-duration: 2s;
   animation-fill-mode: forwards;

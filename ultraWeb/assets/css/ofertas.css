@@ -3,6 +3,11 @@
   src: url(../../fonts/Aller-Bold-Italic/Aller_Std_Bd.ttf);
 }
 
+@font-face {
+  font-family: AllerDisplay;
+  src: url(../../fonts/Aller-Bold-Italic/AllerDisplay_Std_Rg.ttf);
+}
+
 
 * {
   padding: 0;
@@ -13,11 +18,11 @@
 html {
   -webkit-tap-highlight-color: transparent;
   font-size: 12px;
-  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 
 }
 
-@-webkit-keyframes fadein {
+@keyframes fadein {
   from {
     opacity: 0;
   }
@@ -73,8 +78,10 @@ body {
   padding: 10px 0px;
   display: grid;
   /* border: 2px solid black; */
-  grid-template-areas: 'img texto';
+  grid-template-areas: 'img texto'
+    'img pedido';
   grid-template-columns: 1fr 2fr;
+  row-gap: 10px;
 
 }
 
@@ -119,12 +126,37 @@ body {
   font-size: 52px;
 }
 
+.pedido {
+  grid-area: pedido;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-family: AllerDisplay;
+}
+
+.pedidoBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+  border-radius: 10px 0px 0px 5px;
+  background: linear-gradient(to bottom, #6eaaee 0%, #7FBAFF 82.42%);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 
 
 
 .divisor {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .divisor img {
