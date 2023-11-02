@@ -1,15 +1,31 @@
-const CACHE_NAME = 'cacheTesteV3.0'
+const CACHE_NAME = 'principalVs1.1'
 const urlsToCache = [
     './',
     './index.html',
-    './ofertas.html',
+    './betacaroteno.html',
+    './calcio.html',
+    './cartilagem.html',
+    './colageno.html',
+    './higieneBeleza.html',
+    './infantil.html',
+    './licopeno.html',
+    './luteina.html',
+    './novembro.html',
+    './psyllium.html',
     './selenio.html',
     './ultracaps.html',
     './index.js',
     './assets/css/index.css',
-    './assets/css/ofertas.css',
+    './assets/css/higieneBeleza.css',
     './assets/css/selenio.css',
-    './assets/css/ultracaps.css'
+    './assets/css/ultracaps.css',
+    './assets/fonts/Aller_Std_Bd.ttf',
+    './assets/fonts/Aller_Std_BdIt.ttf',
+    './assets/fonts/Aller_Std_It.ttf',
+    './assets/fonts/Aller_Std_Lt.ttf',
+    './assets/fonts/Aller_Std_LtIt.ttf',
+    './assets/fonts/Aller_Std_Rg.ttf',
+    './assets/fonts/AllerDisplay_Std_Rg.ttf'
 ]
 
 self.addEventListener('install', function(event){

@@ -2,12 +2,6 @@
 <html lang="en">
 
 <head>
-    <link rel="preload" fetchpriority="high" as="image"
-        href="./assets/img/gramaFundo.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image"
-        href="./assets/img/backgroundUltra.svg" type="image/svg">
-    <link rel="preload" fetchpriority="high" as="image"
-        href="./assets/img/backgroundVivente.svg" type="image/svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="./manifest.webmanifest" />
@@ -17,12 +11,10 @@
 
 <body>
     <header>
-        <div class="header">
+        <div class="header" id="index">
             <img src="./assets/img/ultraMedFtLogo.svg" alt=""
                 class="logoTextUltra">
-            <!-- <p class="firstText">FIQUE POR DENTRO</p>
-            <p class="secondText">DE TODAS AS</p>
-            <p class="thirdText">OFERTAS</p> -->
+
             <img src="./assets/img/logoUltra.svg" alt="" class="logoUltra">
         </div>
     </header>
@@ -30,16 +22,28 @@
     <section class="mainOptions">
         <div class="options">
 
-            <img class="firstOptionImg"
-                src="./assets/img/ofertasQuinzenaPNG.png" alt="">
-            <a href="./ofertas.html" class="firstOption">
-                OFERTAS DA QUINZENA
+            <!-- <img class="firstOptionImg"
+                src="./assets/img/ofertasQuinzenaPNG.png" alt=""> -->
+            <div class="optionsTitle">
+                <p>OFERTAS DE NOVEMBRO</p>
+            </div>
+
+            <img class="optionItemImg" src="./assets/img/higieneBelezaTitle.png"
+                alt="">
+            <a href="./higieneBeleza.html" class="optionItem">
+                HIGIENE E BELEZA
             </a>
 
-            <img class="secondOptionImg" src="./assets/img/semanaBebePNG.png"
+            <img class="optionItemImgNd" src="./assets/img/infantilTitle.png"
                 alt="">
-            <a href="./semBebe.html" class="secondOption">
-                SEMANA DO BEBÊ
+            <a href="./infantil.html" class="optionItem">
+                LINHA INFANTIL
+            </a>
+
+            <img class="optionItemImgTd" src="./assets/img/novembroTitle.png"
+                alt="">
+            <a href="./novembro.html" class="optionItem blueNovember">
+                NOVEMBRO AZUL
             </a>
 
         </div>
@@ -59,7 +63,8 @@
                 </div>
 
                 <div class="cardImg">
-                    <img src="./assets/img/ultracaps.svg" alt="">
+                    <img class="ultracapsProduto"
+                        src="./assets/img/ultracaps.svg" alt="">
                 </div>
             </div>
 
@@ -67,9 +72,11 @@
                 <a href="./ultracaps.html" id="showBtn">Ver Mais</a>
             </div>
         </div>
-        <div class="card cardVivente">
 
-            <div class="cardContent">
+
+        <div class="card cardVivente">
+            EM BREVE...
+            <!-- <div class="cardContent">
 
                 <div class="cardText">
                     <img class="viventeLogoCard"
@@ -86,7 +93,7 @@
 
             <div class="button btnVivente">
                 <a id="showBtn">Ver Mais</a>
-            </div>
+            </div> -->
         </div>
         <!-- <div class="card">
             <div class="cardContent">

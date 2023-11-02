@@ -29,7 +29,7 @@
 }
 
 html {
-  -webkit-tap-highlight-color: none;
+  -webkit-tap-highlight-color: transparent;
   font-size: 12px;
   -webkit-animation: fadein 2s;
 
@@ -50,7 +50,7 @@ body {
   background-size: 100%;
   background-position: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,22 +134,37 @@ header {
 }
 
 .options {
-  /* border: 3px solid black; */
   width: 100vw;
   display: flex;
   flex-direction: column;
-  row-gap: 80px;
+  row-gap: 60px;
   position: relative;
   margin-bottom: 25px;
+  animation: abertura-options 2s;
+
 }
 
-.options a {
+@keyframes abertura-options {
+  from {
+    transform: translateX(-180%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
+.options a,
+p {
   text-decoration: none;
   text-underline-position: 0;
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   letter-spacing: 2px;
   border: none;
+
 
 }
 
@@ -163,13 +178,8 @@ a:active {
   background-color: #006ae3;
 }
 
-.options .firstOptionImg {
-  position: absolute;
-  width: 65%;
-  top: -50px;
-}
 
-.firstOption {
+.optionsTitle {
   z-index: 10;
   width: 347px;
   height: 66px;
@@ -179,25 +189,62 @@ a:active {
   border-radius: 0px 10px 5px 0px;
   background-color: #0056BA;
   filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.651));
+
+  animation: abertura-options 1.6s;
+}
+
+.optionsTitle p {
+  font-size: 26px;
 }
 
 
-.secondOptionImg {
+.optionItemImg {
   position: absolute;
-  width: 65%;
-  top: 95px;
+  width: 50%;
+  top: 85px;
+  left: 5px
 }
 
-.secondOption {
+.optionItemImgNd {
+  position: absolute;
+  width: 50%;
+  bottom: 155px;
+  left: 5px;
+}
+
+.optionItemImgTd {
+  position: absolute;
+  width: 50%;
+  bottom: 20px;
+  left: 5px;
+}
+
+.blueNovember::after {
+  content: "";
+  margin-left: 20px;
+  width: 35px;
+  height: 55px;
+  background: url(../img/laçoAzul.png);
+  background-size: contain;
+  /* background-color: #93a6bb; */
+  position: absolute;
+  right: 5%;
+  transform: rotate(45deg) translateY(-30%) scale(180%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.optionItem {
   z-index: 10;
-  width: 305px;
+  width: 280px;
   height: 66px;
   display: flex;
   align-items: center;
   padding-left: 5px;
-  border-radius: 0px 10px 5px 0px;
+  border-radius: 5px 20px 10px 0px;
   background-color: #0056BA;
   filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.651));
+
+  animation: abertura-options 1.6s;
 }
 
 .carrousel {
@@ -207,6 +254,7 @@ a:active {
   overflow-y: hidden;
   display: flex;
   flex-direction: row;
+  /* justify-content: center; */
   column-gap: 20px;
   /* background-color: #0056BA; */
 }
@@ -219,7 +267,7 @@ a:active {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 288px;
+  min-width: 298px;
   height: 170px;
   border-radius: 10px;
   padding: 12px;
@@ -234,6 +282,15 @@ a:active {
 .cardVivente {
   background: url(../img/backgroundVivente.svg);
   background-size: cover;
+  opacity: 0.5;
+  /* tirar */
+  display: flex;
+  justify-content: center;
+  /* tirar */
+  align-items: center;
+  /* tirar */
+  font-size: 20px;
+  /* tirar */
 }
 
 .cardContent {
@@ -273,6 +330,10 @@ a:active {
 
 .cardText .ultracapsLogoCard {
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.537));
+}
+
+.cardImg .ultracapsProduto {
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.848));
 }
 
 .cardText .viventeLogoCard {
@@ -330,6 +391,10 @@ a:active {
 .button a:visited {
   color: black;
   text-decoration: none;
+}
+
+#showBtn {
+  color: black;
 }
 
 .btnUltra {

@@ -126,6 +126,11 @@ body {
   font-size: 52px;
 }
 
+.cost .cada {
+  font-size: 16px;
+
+}
+
 .pedido {
   grid-area: pedido;
   height: 40px;

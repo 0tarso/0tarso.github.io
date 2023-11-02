@@ -71,11 +71,11 @@ header {
   justify-content: center;
   align-items: center;
 
-  will-change: transform;
+  /* will-change: transform; */
 
   animation-name: abertura-header;
   animation-fill-mode: forwards;
-  animation-duration: 2s;
+  animation-duration: 1s;
 
 }
 
@@ -107,11 +107,10 @@ header {
   height: 95px;
   width: fit-content;
 
-  will-change: transform;
+  /* will-change: transform; */
 
-  animation-name: abertura-banner;
+  animation-name: fadein;
   animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes abertura-banner {
@@ -163,8 +162,8 @@ header {
   flex-direction: column;
   border-radius: 40px 40px 0px 0px;
   background: linear-gradient(180deg, #0056ba 0%, rgba(0, 86, 186, 0.00) 55%);
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
   row-gap: 10px;
 
   animation: fadein 3s;

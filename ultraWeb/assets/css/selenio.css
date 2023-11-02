@@ -114,6 +114,34 @@ header img {
   height: 2px;
 }
 
+.productName.beta::after {
+  width: 12vw;
+}
+
+.productName::before {
+  width: 12vw;
+}
+
+.productName.calcio::after,
+.productName.calcio::before {
+  width: 25vw;
+}
+
+.productName.cartilagem::after,
+.productName.cartilagem::before {
+  width: 15vw;
+}
+
+.productName.colageno::after,
+.productName.colageno::before {
+  width: 18vw;
+}
+
+.productName.licopeno::after,
+.productName.licopeno::before {
+  width: 18vw;
+}
+
 .title .subname {
   font-size: 1.5rem;
   line-height: 1px;
@@ -193,6 +221,44 @@ header img {
 }
 
 .firstWordCard {
+  font-size: 15px;
   font-weight: 400;
   font-family: AllerDisplay;
+}
+
+.fazerPedido {
+  /* background-color: aqua; */
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.fazerPedido .firstText {
+  /* background-color: aliceblue; */
+  width: 200px;
+  font-family: AllerStdBold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fazerPedido .secondText {
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: AllerDisplay;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(222, 222, 222, 0.814);
+  font-size: 20px;
+}
+
+a.link {
+  color: rgb(0, 188, 0);
+  text-decoration: none;
 }
