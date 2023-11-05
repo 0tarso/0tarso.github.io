@@ -10,110 +10,129 @@
 </head>
 
 <body>
-    <header>
-        <div class="header" id="index">
-            <img src="./assets/img/ultraMedFtLogo.svg" alt=""
-                class="logoTextUltra">
-
-            <img src="./assets/img/logoUltra.svg" alt="" class="logoUltra">
-        </div>
-    </header>
-
-    <section class="mainOptions">
-        <div class="options">
-
-            <!-- <img class="firstOptionImg"
-                src="./assets/img/ofertasQuinzenaPNG.png" alt=""> -->
-            <div class="optionsTitle">
-                <p>OFERTAS DE NOVEMBRO</p>
-            </div>
-
-            <img class="optionItemImg" src="./assets/img/higieneBelezaTitle.png"
-                alt="">
-            <a href="./higieneBeleza.html" class="optionItem">
-                HIGIENE E BELEZA
-            </a>
-
-            <img class="optionItemImgNd" src="./assets/img/infantilTitle.png"
-                alt="">
-            <a href="./infantil.html" class="optionItem">
-                LINHA INFANTIL
-            </a>
-
-            <img class="optionItemImgTd" src="./assets/img/novembroTitle.png"
-                alt="">
-            <a href="./novembro.html" class="optionItem blueNovember">
-                NOVEMBRO AZUL
-            </a>
-
-        </div>
-    </section>
-
-    <div class="carrousel">
-
-        <div class="card cardUltra">
-            <div class="cardContent">
-
-                <div class="cardText">
-
-                    <img src="./assets/img/ultracapsLogo.svg"
-                        class="ultracapsLogoCard" alt="">
-                    <p class="cardTextUltra">Sua jornada para uma vida mais
-                        saudável começa aqui</p>
-                </div>
-
-                <div class="cardImg">
-                    <img class="ultracapsProduto"
-                        src="./assets/img/ultracaps.svg" alt="">
-                </div>
-            </div>
-
-            <div class="button btnUltra">
-                <a href="./ultracaps.html" id="showBtn">Ver Mais</a>
-            </div>
-        </div>
 
 
-        <div class="card cardVivente">
-            EM BREVE...
-            <!-- <div class="cardContent">
+    <div id="textBox" class="textBox visible">
 
-                <div class="cardText">
-                    <img class="viventeLogoCard"
-                        src="./assets/img/ViventeLogo.svg" alt="">
-                    <p class="cardTextVivente">Delicie-se com sabores naturais e
-                        frescos</p>
-                </div>
-
-                <div class="cardImg">
-                    <img class="viventeProd"
-                        src="./assets/img/cháViventeProd.svg" alt="">
-                </div>
-            </div>
-
-            <div class="button btnVivente">
-                <a id="showBtn">Ver Mais</a>
-            </div> -->
-        </div>
-        <!-- <div class="card">
-            <div class="cardContent">
-                <div class="cardImg">
-                    <img src="./assets/img/ultracaps.svg" alt="">
-                </div>
-                <div class="cardText">
-                    <img src="./assets/img/ultracapsLogo.svg" alt="">
-                    <p>As mior vitamina pro seu corpo ficar em dia pa arrasar no
-                        verão e proc viver mais também né</p>
-                </div>
-            </div>
-
-            <div class="button">
-                <button id="showBtn">Ver Mais</button>
-            </div>
-        </div> -->
-
+        <img src="./assets/img/logoUltra.svg" alt=""
+            class="logoUltraText visible">
+        <button id="closeBtn">X</button>
+        <textarea id="msgWppText" name="" id="" cols="30" rows="10"
+            placeholder="Olá, seja bem-vindo. Caso não encontrar o que procura, você pode nos mandar uma mensagem por aqui mesmo!"></textarea>
+        <button id="submitMsgWpp">Enviar</button>
     </div>
 
+    <div id="container" class="container opacity">
+        <header>
+            <div class="header" id="index">
+                <img src="./assets/img/ultraMedFtLogo.svg" alt=""
+                    class="logoTextUltra">
+
+                <img src="./assets/img/logoUltra.svg" alt="" id="logoUltra"
+                    class="logoUltra invisibleLogo">
+
+
+            </div>
+        </header>
+
+
+
+        <section class="mainOptions">
+            <div class="options">
+
+                <!-- <img class="firstOptionImg"
+                    src="./assets/img/ofertasQuinzenaPNG.png" alt=""> -->
+                <div class="optionsTitle">
+                    <p>OFERTAS DE NOVEMBRO</p>
+                </div>
+
+                <img class="optionItemImg"
+                    src="./assets/img/higieneBelezaTitle.png" alt="">
+                <a href="./higieneBeleza.html" class="optionItem">
+                    HIGIENE E BELEZA
+                </a>
+
+                <img class="optionItemImgNd"
+                    src="./assets/img/infantilTitle.png" alt="">
+                <a href="./infantil.html" class="optionItem">
+                    LINHA INFANTIL
+                </a>
+
+                <img class="optionItemImgTd"
+                    src="./assets/img/novembroTitle.png" alt="">
+                <a href="./novembro.html" class="optionItem blueNovember">
+                    NOVEMBRO AZUL
+                </a>
+
+            </div>
+        </section>
+
+        <div class="carrousel">
+
+
+            <div class="card cardUltra">
+                <div class="cardContent">
+
+                    <div class="cardText">
+
+                        <img src="./assets/img/ultracapsLogo.svg"
+                            class="ultracapsLogoCard" alt="">
+                        <p class="cardTextUltra">Sua jornada para uma vida mais
+                            saudável começa aqui</p>
+                    </div>
+
+                    <div class="cardImg">
+                        <img class="ultracapsProduto"
+                            src="./assets/img/ultracaps.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="button btnUltra">
+                    <a href="./ultracaps.html" id="showBtn">Ver Mais</a>
+                </div>
+            </div>
+
+
+            <div class="card cardVivente">
+                EM BREVE...
+                <!-- <div class="cardContent">
+
+                    <div class="cardText">
+                        <img class="viventeLogoCard"
+                            src="./assets/img/ViventeLogo.svg" alt="">
+                        <p class="cardTextVivente">Delicie-se com sabores naturais e
+                            frescos</p>
+                    </div>
+
+                    <div class="cardImg">
+                        <img class="viventeProd"
+                            src="./assets/img/cháViventeProd.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="button btnVivente">
+                    <a id="showBtn">Ver Mais</a>
+                </div> -->
+            </div>
+            <!-- <div class="card">
+                <div class="cardContent">
+                    <div class="cardImg">
+                        <img src="./assets/img/ultracaps.svg" alt="">
+                    </div>
+                    <div class="cardText">
+                        <img src="./assets/img/ultracapsLogo.svg" alt="">
+                        <p>As mior vitamina pro seu corpo ficar em dia pa arrasar no
+                            verão e proc viver mais também né</p>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button id="showBtn">Ver Mais</button>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
     <!-- <footer class="nav">
 
 

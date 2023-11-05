@@ -31,11 +31,9 @@
 html {
   -webkit-tap-highlight-color: transparent;
   font-size: 12px;
-  -webkit-animation: fadein 2s;
-
 }
 
-@-webkit-keyframes fadein {
+@keyframes fadein {
   from {
     opacity: 0;
   }
@@ -45,7 +43,9 @@ html {
   }
 }
 
-body {
+
+
+.container {
   background-image: url(../img/gramaFundo.webp);
   background-size: 100%;
   background-position: center;
@@ -55,7 +55,13 @@ body {
   flex-direction: column;
   align-items: center;
   row-gap: 25px;
-  overflow-y: scroll;
+  /* overflow: scroll; */
+
+  /* animation: fadein 3s; */
+}
+
+.opacity {
+  opacity: 0.5;
 }
 
 header {
@@ -86,7 +92,7 @@ header {
   will-change: transform;
 
   animation-name: queda-header;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -108,29 +114,115 @@ header {
   filter: drop-shadow(5px 5px 5px black);
 }
 
-.firstText {
-  font-size: 1.3em;
-}
-
-.secondText {
-  font-size: 2em;
-}
-
-.thirdText {
-  font-size: 3em;
-}
-
 .logoTextUltra {
   transform: scale(140%);
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.445));
 }
 
-.logoUltra {
+.logoUltra.visibleLogo {
   width: 100px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 85%);
+  z-index: 56;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.118));
+  animation: width 1s ease-in-out 0s 3 normal forwards, fadein 2s forwards;
+}
+
+@keyframes width {
+  0% {
+    width: 100px;
+  }
+
+  50% {
+    width: 105px;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+
+.invisibleLogo {
+  position: absolute;
+  opacity: 0;
+}
+
+
+
+.textBox {
+
+  background: radial-gradient(#8cc2ff 0%, #004a9e 100%);
+  width: 80vw;
+  height: 200px;
+  border-radius: 15px;
+  padding-top: 15px;
+
+  position: absolute;
+  transform: translateY(120%) translateX(10%);
+  z-index: 55;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+
+  animation: fadein 2s;
+}
+
+.logoUltraText {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  width: 100px;
+}
+
+.invisible {
+  transform: translateY(-160%);
+  width: 100px;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+}
+
+
+.textBox textarea {
+  width: 80%;
+  height: 50%;
+  padding: 5px;
+
+  border: 2px solid rgba(0, 0, 0, 0.488);
+  border-radius: 5px;
+  font-family: AllerStdBold;
+  /* display: block; */
+}
+
+textarea:hover {
+  border: 2px solid rgb(49, 49, 49);
+  outline: none;
+  background-color: rgb(255, 255, 255);
+
+}
+
+#submitMsgWpp {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.497);
+}
+
+#submitMsgWpp:active {
+  background-color: white;
+  color: rgb(205, 0, 0);
+  transform: scale(1.01);
 }
 
 .options {
