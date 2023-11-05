@@ -44,6 +44,32 @@ html {
 }
 
 
+.onLoadScreen {
+  position: absolute;
+  z-index: 6666;
+  width: 100vw;
+  height: 100vh;
+  background-color: #004a9e;
+  background-size: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.onLoadScreen .img {
+  display: flex;
+}
+
+.onLoadScreen .texto {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 70vw;
+}
 
 .container {
   background-image: url(../img/gramaFundo.webp);
@@ -51,7 +77,7 @@ html {
   background-position: center;
   width: 100vw;
   min-height: 100vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   row-gap: 25px;

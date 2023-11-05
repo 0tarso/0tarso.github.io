@@ -10,9 +10,46 @@ if('serviceWorker' in navigator){
 }
 
 
+function typeWrite(e) {
+  const textoArray = e.innerHTML.split('');
+  e.innerHTML = ' ';
+  textoArray.forEach(function (letter, i) {
+      setTimeout(function () {
+          e.innerHTML += letter;
+      }, 50 * i);
+  });
+}
+
+let openText = document.getElementById('openText')
+typeWrite(openText)
+
+
 
 let container = document.getElementById('container')
 let textBox = document.getElementById('textBox')
+let onLoadScreen = document.getElementById('onLoadScreen')
+
+// verifica se não! existe o 'log' firstLoad
+if(!sessionStorage.getItem('firstLoad')){
+  console.log('dsad')
+  sessionStorage.setItem('firstLoad', 'true')
+
+  //add evento de load
+  window.addEventListener('load',() => {
+    
+    console.log('loadComplete')
+    //tempo após o load estar completo para tomar as devidas ações
+    setTimeout(() => {
+      onLoadScreen.style.display = 'none'
+      container.style.display = 'flex'
+    }, 5000)  
+  })
+
+}else {
+  onLoadScreen.style.display = 'none'
+  container.style.display = 'flex'
+}
+
 
 
 //verificar se ja existe o 'log' do primeiro fechamento da aba de msg
